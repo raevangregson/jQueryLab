@@ -16,6 +16,7 @@ h1{
 
 h3{
   color:#E34E45;
+  margin-top: 35px;
 }
 
 .tables{
@@ -51,7 +52,15 @@ button{
   border:none;
   box-shadow: 0px 0px 31px 1px rgba(0,0,0,0.3);
 }
+.reserved{
+  background-color:#ADAAAA;
+}
 
+img{
+  float:right;
+  margin-right:-10px;
+  margin-top: 10px;
+}
 .prompt{
   display:none;
   flex-direction:column;
