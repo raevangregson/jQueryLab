@@ -3,7 +3,7 @@
 $(document).ready(function(){
 
   var elementClicked = "";
-  $(".circle").click(function(){
+  $(".circle").on("click",function(){
     if($(this).hasClass( "available"))
     {
       $("label").text(" "+this.id);
@@ -13,11 +13,12 @@ $(document).ready(function(){
 });
 
 
-  $("button").click(function(){
+  $("#reserved").on("click",function(){
     if($(".circle.available")){
       $(elementClicked).removeClass('available').addClass('reserved');
       $(elementClicked).css("background-color","#ADAAAA");
       $(elementClicked).css("color","#EEE");
+      $(elementClicked).css("cursor","not-allowed");
     $(".prompt").hide();
   }
   });
