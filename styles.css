@@ -32,6 +32,8 @@ h3{
   z-index:2;
 }
 
+
+
 input{
   display:block;
   border:none;
@@ -72,7 +74,6 @@ img{
 }
 
 .available:hover{
-
   transition: .5s ease;
   background-color: #008CBA;
 }
@@ -85,4 +86,53 @@ img{
   line-height: 90px;
   border-radius:200px;
   color:#ADAAAA;
+}
+
+.reserved{
+  background-color:#ADAAAA;
+  font-size: 12px;
+  cursor:not-allowed;
+  color: #EEE;
+
+}
+.reserved:hover{
+  background-color: #d63353;
+}
+
+.hovering{
+    background:#F8F8F8;
+    border: 5px solid #DFDFDF;
+    color: #717171;
+    font-size: 13px;
+    height: 30px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: -80px;
+    left:-30px;
+    display:none;
+    padding:0 20px;
+
+}
+
+.reserved:hover span{
+    display:block;
+    position: relative;
+}
+
+.hovering:after{
+    content:'';
+    position:absolute;
+    bottom:-10px;
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #dfdfdf;
+    border-right:5px solid #dfdfdf;
+    background:#f8f8f8;
+    left:50%;
+    margin-left:-10px;
+    transform:rotate(45deg);
+    font-size: 10px;
 }
